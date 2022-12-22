@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "json-simple-1.1.1.jar"
+        ],
+        "exclude": [
+            "lib/aspose-email-22.11-jdk16.jar"
+        ]
+    }
+}

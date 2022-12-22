@@ -1,0 +1,19 @@
+# Ignorar o arquivos txt
+api_key.txt
+cache_HGWeather.txt
+Exemplo_HGWeather.txt
+Exemplo_forecast_parse.txt
+email_sender_config.txt
+
+# Ignorar o arquivo main
+Main.java
+Main.class
+
+# Ignorar arquivos a serem implementados posteriormente
+CacheCreator.java
+CacheCreator.class
+
+lib/activation-1.1.jar
+lib/aspose-email-22.11-jdk16.jar
+lib/commons-email-1.1.jar
+lib/javax.mail.jar
