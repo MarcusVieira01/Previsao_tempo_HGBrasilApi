@@ -1,0 +1,13 @@
+[
+    {"date":"11/12","weekday":"Dom","max":26,"min":20,"cloudiness":99.0,"rain":3.39,"rain_probability":84,"wind_speedy":"2.4 km/h","description":"Chuvas esparsas","condition":"rain"},
+    {"date":"12/12","weekday":"Seg","max":29,"min":19,"cloudiness":100.0,"rain":11.76,"rain_probability":95,"wind_speedy":"6.61 km/h","description":"Chuva","condition":"rain"},
+    {"date":"13/12","weekday":"Ter","max":21,"min":17,"cloudiness":100.0,"rain":18.27,"rain_probability":100,"wind_speedy":"5.47 km/h","description":"Chuva","condition":"rain"},
+    {"date":"14/12","weekday":"Qua","max":21,"min":15,"cloudiness":47.0,"rain":0.0,"rain_probability":22,"wind_speedy":"4.91 km/h","description":"Parcialmente nublado","condition":"cloud"},
+    {"date":"15/12","weekday":"Qui","max":25,"min":15,"cloudiness":82.0,"rain":0.0,"rain_probability":32,"wind_speedy":"4.04 km/h","description":"Tempo nublado","condition":"cloudly_day"},
+    {"date":"16/12","weekday":"Sex","max":27,"min":17,"cloudiness":99.0,"rain":2.13,"rain_probability":65,"wind_speedy":"4.29 km/h","description":"Chuvas esparsas","condition":"rain"},
+    {"date":"17/12","weekday":"Sáb","max":22,"min":17,"cloudiness":99.0,"rain":0.85,"rain_probability":84,"wind_speedy":"4.59 km/h","description":"Chuvas esparsas","condition":"rain"},
+    {"date":"18/12","weekday":"Dom","max":21,"min":18,"cloudiness":100.0,"rain":5.48,"rain_probability":100,"wind_speedy":"3.97 km/h","description":"Chuva","condition":"rain"},
+    {"date":"19/12","weekday":"Seg","max":24,"min":17,"cloudiness":89.0,"rain":0.62,"rain_probability":66,"wind_speedy":"4.92 km/h","description":"Chuvas esparsas","condition":"rain"},
+    {"date":"20/12","weekday":"Ter","max":22,"min":18,"cloudiness":100.0,"rain":9.32,"rain_probability":100,"wind_speedy":"3.15 km/h","description":"Chuva","condition":"rain"}
+    ],"cref":"e6fb59"},
+    "execution_time":0.0,"from_cache":true}
