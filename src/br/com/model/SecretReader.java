@@ -13,23 +13,23 @@ import java.io.Reader;
 
 /**
  * @author Marcus Vieira
- * @apiNote Classe concreta que modela a chave de acesso à API HG Waather e possui o atributo chave
+ * @apiNote Classe concreta que modela a secret de acesso à API HG Waather e possui o atributo secret
  */
 public class SecretReader {
     //Declaração de atributos privados
     private String secret = "";
 
     /**
-     * Método que buscará a chave da API em um arquivo .txt e atribuirá ao atributo chave
-     * @param path String contendo o destino do arquivo que contém as chaves
+     * Método que buscará a secret da API em um arquivo .txt e atribuirá ao atributo secret
+     * @param path String contendo o destino do arquivo que contém as secrets
      */
     private void captureKey(String path){
         //Estrutura try-catch para captura e tratamento de exceções
         try{
-            //Instanciação de objeto que conterá o arquivo com a chave da API, onde o caminho é passado em seu parâmetro e contido na variável path
+            //Instanciação de objeto que conterá o arquivo com a secret da API, onde o caminho é passado em seu parâmetro e contido na variável path
             File arquivo = new File(path);
 
-            //Instanciação de processo de stream do objeto arquivo, que contém o arquivo com a chave de acesso à API HG Weather
+            //Instanciação de processo de stream do objeto arquivo, que contém o arquivo com a secret de acesso à API HG Weather
             InputStream fileInputStream = new FileInputStream(arquivo);
             Reader inputStreamReader = new InputStreamReader(fileInputStream);
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -50,15 +50,15 @@ public class SecretReader {
     }    
 
     /**
-     * Método getter para retorno do valor do atributo chave
+     * Método getter para retorno do valor do atributo secret
      * @param path String com o caminho do arquivo a ser lido
-     * @return String sendo o valor do atributo chave
+     * @return String sendo o valor do atributo secret
      */
     public String getKey(String path){
         //Evocação de método interno auxiliar
         captureKey(path);
 
-        //Retorno do valor contido no atributo chave
+        //Retorno do valor contido no atributo secret
         return this.secret;
     }
 }
