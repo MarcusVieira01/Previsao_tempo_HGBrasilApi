@@ -1,8 +1,5 @@
 # Ignorar o arquivos txt
 api_key.txt
-cache_HGWeather.txt
-Exemplo_HGWeather.txt
-Exemplo_forecast_parse.txt
 email_sender_config.txt
 
 # Ignorar o arquivo main
