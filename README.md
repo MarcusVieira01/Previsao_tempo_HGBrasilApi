@@ -44,14 +44,14 @@ Descrição das tarefas pendentes e completas:
 
 Legenda: :x: - Cancelada | :white_check_mark: Concluída | :large_blue_diamond: Pendente | :o: Reaberto
 
-Tarefa                                                                | Status
-:---                                                                  | :---:
-Refatorar classe KeyReader para SecretReader                          | :white_check_mark:
-Refatorar classe SecreatReader para captura de login do e-mail        | :large_blue_diamond:
-Refatorar EmailSender para receber o login da classe SecretReader     | :large_blue_diamond:
-Refatorar classe ParseJsonHG para retornar um objeto WeatherActual    | :white_check_mark:
-Criar classe que gera o arquivo HTML para exibição das informações    | :large_blue_diamond:
-Realizar o release v0.1                                               | :large_blue_diamond:
+Tarefa                                                                    | Status
+:---                                                                      | :---:
+Refatorar classe KeyReader para SecretReader                              | :white_check_mark:
+Refatorar classe SecreatReader para captura de login do e-mail            | :large_blue_diamond:
+Refatorar EmailSender para receber o login da classe SecretReader         | :large_blue_diamond:
+Refatorar classe ParseJsonHG para retornar um objeto WeatherActual        | :white_check_mark:
+Criar classe que gera o arquivo HTML para exibição das informações        | :large_blue_diamond:
+Realizar o release v0.1                                                   | :large_blue_diamond:
 
 ## **Descrição das implementações**
 
