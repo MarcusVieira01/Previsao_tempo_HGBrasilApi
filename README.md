@@ -47,7 +47,8 @@ Legenda: :x: - Cancelada | :white_check_mark: Concluída | :large_blue_diamond: 
 Tarefa                                                                | Status
 :---                                                                  | :---:
 Refatorar classe KeyReader para SecretReader                          | :white_check_mark:
-Refatorar classe Main (oculta) para  extrair o login do e-mail        | :large_blue_diamond:
+Refatorar classe SecreatReader para captura de login do e-mail        | :large_blue_diamond:
+Refatorar EmailSender para receber o login da classe SecretReader     | :large_blue_diamond:
 Refatorar classe ParseJsonHG para retornar um objeto WeatherActual    | :white_check_mark:
 Criar classe que gera o arquivo HTML para exibição das informações    | :large_blue_diamond:
 Realizar o release v0.1                                               | :large_blue_diamond:
@@ -67,5 +68,3 @@ Realizar o release v0.1                                               | :large_b
     Após teste da filosofia foi gerado um merge de todas as branches para a main para que, após esses testes, seja seguida a filosofia implementada.
 
 - **Implementação da classe EmailSender:** Implementação de classe que fará o envio de e-mail com os dados lidos e tratados pelo sistema implementado.
-
-- **Implementação de classe emailCfgReader:** Implementação de classe que lerá um arquivo de configuração com os dados de configuração para a classe EmailSender funcionar. Essa classe existe para que não haja vazamento de secrets no código fonte.
