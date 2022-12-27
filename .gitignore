@@ -10,6 +10,7 @@ Main.class
 CacheCreator.java
 CacheCreator.class
 
+# Ignorar os pacotes externos
 lib/activation-1.1.jar
 lib/aspose-email-22.11-jdk16.jar
 lib/commons-email-1.1.jar
