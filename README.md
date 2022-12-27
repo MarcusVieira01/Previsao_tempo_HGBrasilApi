@@ -46,10 +46,7 @@ Legenda: :x: - Cancelada | :white_check_mark: Concluída | :large_blue_diamond: 
 
 Tarefa                                                                | Status
 :---                                                                  | :---:
-Implementar classe EmailCfgReader                                     | :large_blue_diamond:
-Implementar classe Reader abstraindo os leitores implementados        | :large_blue_diamond:
-Implementar classe EmailReader com os dados obtidos em EmailCfgReader | :large_blue_diamond:
-Continuar a integração da classe ParseJsonHG                          | :large_blue_diamond:
+Refatorar classe KeyReader para SecretReader                          | :white_check_mark:
 
 ## **Descrição das implementações**
 
