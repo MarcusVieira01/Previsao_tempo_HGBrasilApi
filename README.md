@@ -47,7 +47,10 @@ Legenda: :x: - Cancelada | :white_check_mark: Concluída | :large_blue_diamond: 
 Tarefa                                                                | Status
 :---                                                                  | :---:
 Refatorar classe KeyReader para SecretReader                          | :white_check_mark:
-Refatorar classe Main (oculta) para  extrair o login do email         | :large_blue_diamond:
+Refatorar classe Main (oculta) para  extrair o login do e-mail        | :large_blue_diamond:
+Refatorar classe ParseJsonHG para retornar um objeto WeatherActual    | :white_check_mark:
+Criar classe que gera o arquivo HTML para exibição das informações    | :large_blue_diamond:
+Realizar o release v0.1                                               | :large_blue_diamond:
 
 ## **Descrição das implementações**
 
