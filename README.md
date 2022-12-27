@@ -47,6 +47,7 @@ Legenda: :x: - Cancelada | :white_check_mark: Concluída | :large_blue_diamond: 
 Tarefa                                                                | Status
 :---                                                                  | :---:
 Refatorar classe KeyReader para SecretReader                          | :white_check_mark:
+Refatorar classe Main (oculta) para  extrair o login do email         | :large_blue_diamond:
 
 ## **Descrição das implementações**
 
