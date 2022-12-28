@@ -5,19 +5,19 @@ package br.com.model;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+//Importação de classe interna
+import br.com.util.JsonCut;
 
 /**
- * @apiNote Classe que realiza o corte do JSON de resposta da requisição HTTP da API HG Brasil, realiza o parse do trecho referente ao uso da chave, do trecho referente ao clima atual e a parte sobre o forecast
+ * @apiNote Classe que realiza o corte do JSON de resposta da requisição HTTP da API HG Brasil, 
+ * realiza o parse do trecho referente ao uso da chave, do trecho referente ao clima atual e a 
+ * parte sobre o forecast
  */
 public class ParseJsonHG {
     /**
      * Declaração de atributos privados. 
      */
     private String jsonInicial;
-    private String jsonActual;
-    private String[] jsonForecast;
-    private String keyStatus;
-
     
     /**
      * Construtor do objeto ParseJsonHG
@@ -28,53 +28,17 @@ public class ParseJsonHG {
     }
 
     /**
-     * Método que realiza o corte do json para os trechos que compõe o clima atual, o forecast e o retorno do uso da chave; 
-     */
-    private void jsonCut(){
-        //Atribuição do valor do atributo jsonInicial à variável local json
-        String json = this.jsonInicial;
-
-        //Corte para limpeza e separação dos conteúdos actual e forecast
-        String[] corteJsonInicial = (json.split("\"results\":"))[1].split(",\"forecast\":");
-
-        //Separação do trecho do clima Actual e atribuição ao atributo específico
-        this.jsonActual = corteJsonInicial[0] + "}";
-
-        //
-        String[] corteForecast1 = corteJsonInicial[1].split("],\"cref\"");
-
-        String corteForecast2 = corteForecast1[0].replace("[", "");
-
-        String[] corteForecast3 = corteForecast2.split("\\},\\{");
-
-        corteForecast3[0] = corteForecast3[0].replaceAll("\\{", "");
-        corteForecast3[9] = corteForecast3[9].replaceAll("\\}", "");
-
-        for(int i = 0; i < corteForecast3.length; i++){
-            corteForecast3[i] = "{" + corteForecast3[i] + "}";
-        }
-
-        this.jsonForecast = corteForecast3;
-
-
-    }
-
-    /**
-     * Método que evoca o método auxiliar jsonCut e parseia o JSON resultante para construção do objeto da classe WeatherActual
+     * Método que evoca o método auxiliar jsonCut e parseia o JSON resultante para construção do 
+     * objeto da classe WeatherActual
      * @return Objeto WeatherActual com os atributos atribuídos pelo parseamento
      * @throws ParseException
      */
     public WeatherActual parseActual() throws ParseException{
-        //Evocação de método interno que fará o corte do body do HttpResponse
-        jsonCut();
-
-        //Declaração de variável local e inicialização dom o valor do atributo homônimo
-        String jsonActual = this.jsonActual;
 
         //Instanciamento de objeto via construtor JSONParser();
         JSONParser parser = new JSONParser();
         //Evocação de método do objeto acima instanciado, .parse(json) com cast para o tipo JSONObject
-        JSONObject jsonObject = (JSONObject) parser.parse(jsonActual);
+        JSONObject jsonObject = (JSONObject) parser.parse(new JsonCut().getJsonActual(this.jsonInicial));
         
         //Parseamento dos elementos contidos no objeto jsonObject
         String date = jsonObject.get("date").toString();
@@ -93,35 +57,22 @@ public class ParseJsonHG {
         String condSlug = jsonObject.get("condition_slug").toString();
 
         //Construção de objeto da classe WeatherActual com os atributos parseados
-        WeatherActual weatherActual = new WeatherActual(temperature, date, time, description, currently, city, humidity, cloudiness, rain, wSpeed, wDirection, sunRise, sunSet, condSlug);
+        WeatherActual weatherActual = new WeatherActual(temperature, date, time, description, currently, city, 
+                                                        humidity, cloudiness, rain, wSpeed, wDirection, sunRise, 
+                                                        sunSet, condSlug);
 
         //Retorno no objeto construído
         return weatherActual;
     }
 
     /**
-     * Método getter que retorna o json para o clima atual
-     * @return String jsonActual
+     * Método que realiza o parse do trecho forecast do JSON
+     * @throws ParseException
      */
-    public String getJsonActual() {
-        return jsonActual;
-    }
-    /**
-     * Método getter que retorna o json para a previsão do clima
-     * @return String jsonForecast
-     */
-    public String[] getJsonForecast() {
-        return jsonForecast;
-    }
-
     public void parseForecast() throws ParseException{
-
-        jsonCut();
-
-        for (String string : jsonForecast) {
-            System.out.println(string);
-        }
-
+        //
+        String[] jsonForecast = (new JsonCut().getJsonForecast(jsonInicial));
+        //TRECHO AINDA NÃO IMPLEMENTADO ---> INSTANCIAMENTO DE OBJETOS WEATHERFORECAST E INCLUSÂO EM UM LIST
         for (String string : jsonForecast) {
             //Instanciamento de objeto via construtor JSONParser();
             JSONParser parser = new JSONParser();
@@ -130,27 +81,22 @@ public class ParseJsonHG {
 
             String weekday = jsonObject.get("weekday").toString();
 
-            System.out.println(weekday);
-            
+            System.out.println(weekday); 
         }
-        
     }
-    
+
     /**
      * Método getter para o atributo keyStatus
      * @return
      * @throws ParseException
      */
-    public String getKeyStatus() throws ParseException {
-        //
-        jsonCut();
+    public String parseKeyStatus() throws ParseException {
         //Instanciamento de objeto via construtor JSONParser();
         JSONParser parser = new JSONParser();
         //Evocação de método do objeto acima instanciado, .parse(json) com cast para o tipo JSONObject
         JSONObject jsonObject = (JSONObject) parser.parse(this.jsonInicial);
 
-        this.keyStatus = jsonObject.get("valid_key").toString();
-
-        return keyStatus;
+        //Retorno do valor do elemento valid_key
+        return jsonObject.get("valid_key").toString();
     }
 }
