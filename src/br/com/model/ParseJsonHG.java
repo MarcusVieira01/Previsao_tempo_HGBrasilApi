@@ -1,6 +1,7 @@
 //Declaração de pacote
 package br.com.model;
 
+//Importação de classes externas
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -15,7 +16,9 @@ public class ParseJsonHG {
     private String jsonInicial;
     private String jsonActual;
     private String[] jsonForecast;
+    private String keyStatus;
 
+    
     /**
      * Construtor do objeto ParseJsonHG
      * @param json String contendo o json para parseamento
@@ -25,7 +28,7 @@ public class ParseJsonHG {
     }
 
     /**
-     * Método que realiza o corte do json para o trecho de clima atual
+     * Método que realiza o corte do json para os trechos que compõe o clima atual, o forecast e o retorno do uso da chave; 
      */
     private void jsonCut(){
         //Atribuição do valor do atributo jsonInicial à variável local json
@@ -52,6 +55,8 @@ public class ParseJsonHG {
         }
 
         this.jsonForecast = corteForecast3;
+
+
     }
 
     /**
@@ -128,7 +133,24 @@ public class ParseJsonHG {
             System.out.println(weekday);
             
         }
-
+        
     }
     
+    /**
+     * Método getter para o atributo keyStatus
+     * @return
+     * @throws ParseException
+     */
+    public String getKeyStatus() throws ParseException {
+        //
+        jsonCut();
+        //Instanciamento de objeto via construtor JSONParser();
+        JSONParser parser = new JSONParser();
+        //Evocação de método do objeto acima instanciado, .parse(json) com cast para o tipo JSONObject
+        JSONObject jsonObject = (JSONObject) parser.parse(this.jsonInicial);
+
+        this.keyStatus = jsonObject.get("valid_key").toString();
+
+        return keyStatus;
+    }
 }
