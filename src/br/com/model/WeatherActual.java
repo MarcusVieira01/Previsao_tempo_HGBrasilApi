@@ -33,7 +33,7 @@ public class WeatherActual {
      * @param currently   Dia/tarde/noite
      * @param city        Cidade, Estado
      * @param humidity    Umidade
-     * @param cloudiness   Nebulosidade
+     * @param cloudiness  Nebulosidade
      * @param rain        Precipitação
      * @param wSpeed      Velocidade do vento
      * @param wDirection  Direção do vento
@@ -66,21 +66,19 @@ public class WeatherActual {
      */
     @Override
     public String toString() {
-        return "WeatherActual [temp="        + temp + 
-                            ", date="        + date + 
-                            ", time="        + time + 
-                            ", description=" + description + 
-                            ", currently="   + currently + 
-                            ", city="        + city + 
-                            ", humidity="    + humidity + 
-                            ", cloudness="   + cloudiness + 
-                            ", rain="        + rain + 
-                            ", wSpeed="      + wSpeed + 
-                            ", wDirection="  + wDirection + 
-                            ", sunRise="     + sunRise + 
-                            ", sunSet="      + sunSet + 
-                            ", condSlug="    + condSlug + 
-                            "]";
+        return  "Clima agora"                              + "\n"      +  
+                "Última Atualização: Data: " + date        + " Hora: " + time + " " + currently + "\n" +
+                "Cidade: "                   + city        + "\n"      +
+                "Temperatura: "              + temp        + "°C\n"    + 
+                "Humidade: "                 + humidity    + "%\n"     + 
+                "Descrição: "                + description + "\n"      +
+                "Tendência: "                + condSlug    + "\n"      +
+                "Nebulosidade: "             + cloudiness  + "%\n"     +
+                "Precipitação agora: "       + rain        + "mm\n"    +
+                "Velocidade do vento: "      + wSpeed      + "\n"      +
+                "Direção do vento: "         + wDirection  + "°\n"     + 
+                "Nascer do sol: "            + sunRise     + "\n"      +
+                "Por do sol: "               + sunSet      + "\n"      ;
     }
 
     /**
