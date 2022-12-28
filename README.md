@@ -67,8 +67,12 @@ Realizar o release v0.1                                                   | :lar
 
 - **Implementação de classe KeyReader (SecretReader):** Classe que fará a leitura do arquivo **api_key.txt** e retornará seu valor no formato String. Ela é usada na classe **HttpRequestHG** como integrante da requisição, passando a chave de acesso. Essa classe existe para que a chave de acesso API HG Weather não seja exposta no repositório, gerando um vazamento de secret.
 
+    Classe refatorada para SecretReader, melhorando a descrição do nome e criada feature para conseguir ler o arquivo **email_sender_config.txt** e extrair os secrets necessários.
+
 - **Implementação de classe WeatherActual:** Classe que modela um clima atual, com atributos e métodos de acesso à esses atributos. Possui método toString() para exibição do conteúdo do objeto.
 
 - **Implementação de classe ParseJsonHG:** Classe que realiza o parseamento do JSON do body de resposta para um objeto da classe WeatherActual.
 
 - **Implementação da classe EmailSender:** Implementação de classe que fará o envio de e-mail com os dados lidos e tratados pelo sistema implementado.
+
+- **Implementação da classe JsonCut:** Implementação de classe utilitária que fará o fracionamento do JSON de resposta da requisição HTTP para os elementos de validação de chave, clima atual e forecast.
