@@ -75,4 +75,4 @@ Realizar o release v0.1                                                   | :lar
 
 - **Implementação da classe EmailSender:** Implementação de classe que fará o envio de e-mail com os dados lidos e tratados pelo sistema implementado.
 
-- **Implementação da classe JsonCut:** Implementação de classe utilitária que fará o fracionamento do JSON de resposta da requisição HTTP para os elementos de validação de chave, clima atual e forecast.
+- **Implementação da classe JsonCut:** Implementação de classe utilitária que fará o fracionamento do JSON de resposta da requisição HTTP para os elementos como clima atual e forecast.
