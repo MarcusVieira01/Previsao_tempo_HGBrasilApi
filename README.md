@@ -50,6 +50,8 @@ Refatorar classe ParseJsonHG para retornar um objeto WeatherActual        | :whi
 Refatorar classe KeyReader para SecretReader                              | :white_check_mark:
 Refatorar a exição do método toString() da classe WeatherActual           | :white_check_mark:
 Testar o parsionamento do JSON por secção header, result e forcast        | :x: - Cancelada
+Refatorar ParseJsonHG organizando e colocando os comentários              | :large_blue_diamond:
+Separar o método jsonCut() para classe utilitária (coesão e acoplamento)  | :large_blue_diamond:
 Criar classe WeatherForecast                                              | :large_blue_diamond:
 Refatorar ParseJsonHG para retornar um objeto WeatherForecast             | :large_blue_diamond:
 Refatorar classe SecreatReader para captura de login do e-mail            | :large_blue_diamond:
