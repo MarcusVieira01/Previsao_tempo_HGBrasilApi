@@ -1,5 +1,7 @@
 # ***Previsão do tempo com API HG Weather***
 
+![STATUS](https://img.shields.io/badge/STATUS-Development-yellow) ![JAVA](https://img.shields.io/badge/TECH-Java|HTML-blue)
+
 ## **Objetivos**
 
 - Leitura do JSON de resposta à requisição à API HG Weather;
