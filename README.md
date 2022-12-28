@@ -69,8 +69,4 @@ Realizar o release v0.1                                                   | :lar
 
 - **Implementação de classe ParseJsonHG:** Classe que realiza o parseamento do JSON do body de resposta para um objeto da classe WeatherActual.
 
-- **Implementação de GitFlow:** Aplicação de filosofia GitFlow com a implementação das branches main, onde ficará o código final após testes, develop, onde ficará o código já com as features integradas, e as branches de features, que receberão os desenvolvimentos das classes e funcionalidades. Essa implementação foi feita e testada com alguns arquivos.
-
-    Após teste da filosofia foi gerado um merge de todas as branches para a main para que, após esses testes, seja seguida a filosofia implementada.
-
 - **Implementação da classe EmailSender:** Implementação de classe que fará o envio de e-mail com os dados lidos e tratados pelo sistema implementado.
