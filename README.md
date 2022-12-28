@@ -51,7 +51,7 @@ Tarefa                                                                    | Stat
 Refatorar classe ParseJsonHG para retornar um objeto WeatherActual        | :white_check_mark:   |                 |
 Refatorar classe KeyReader para SecretReader                              | :white_check_mark:   |                 |  
 Refatorar a exição do método toString() da classe WeatherActual           | :white_check_mark:   |                 |
-Testar o parsionamento do JSON por secção header, result e forcast        | :x: - Cancelada      | Quebra de SOLID |
+Testar o parsionamento do JSON por secção header, result e forcast        | :x:                  | Quebra de SOLID |
 Refatorar ParseJsonHG organizando e colocando os comentários              | :white_check_mark:   |                 |
 Separar o método jsonCut() para classe utilitária (coesão e acoplamento)  | :white_check_mark:   |                 |
 Criar classe WeatherForecast                                              | :large_blue_diamond: |                 |
