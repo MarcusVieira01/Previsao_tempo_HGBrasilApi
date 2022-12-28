@@ -1,6 +1,6 @@
 # ***Previsão do tempo com API HG Weather***
 
-![STATUS](https://img.shields.io/badge/STATUS-Development-yellow) ![JAVA](https://img.shields.io/badge/TECH-Java|HTML-blue)
+![STATUS](https://img.shields.io/badge/STATUS-Development-yellow) ![BACK](https://img.shields.io/badge/BACK-Java-blue) ![FRONT](https://img.shields.io/badge/FRONT-HTML_|_BOOTSTRAP-blue)
 
 ## **Objetivos**
 
