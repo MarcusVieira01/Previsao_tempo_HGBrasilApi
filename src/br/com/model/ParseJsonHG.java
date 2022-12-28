@@ -70,8 +70,9 @@ public class ParseJsonHG {
      * @throws ParseException
      */
     public void parseForecast() throws ParseException{
-        //
+        //Atribuição do valor de retorno do parseamento do atributo jsonIncial para o elemento de forecast
         String[] jsonForecast = (new JsonCut().getJsonForecast(jsonInicial));
+        
         //TRECHO AINDA NÃO IMPLEMENTADO ---> INSTANCIAMENTO DE OBJETOS WEATHERFORECAST E INCLUSÂO EM UM LIST
         for (String string : jsonForecast) {
             //Instanciamento de objeto via construtor JSONParser();
