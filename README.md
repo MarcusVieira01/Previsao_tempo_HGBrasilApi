@@ -49,6 +49,7 @@ Tarefa                                                                    | Stat
 Refatorar classe ParseJsonHG para retornar um objeto WeatherActual        | :white_check_mark:
 Refatorar classe KeyReader para SecretReader                              | :white_check_mark:
 Refatorar a exição do método toString() da classe WeatherActual           | :white_check_mark:
+Testar o parsionamento do JSON por secção header, result e forcast        | :large_blue_diamond:
 Refatorar classe SecreatReader para captura de login do e-mail            | :large_blue_diamond:
 Refatorar EmailSender para receber o login da classe SecretReader         | :large_blue_diamond:
 Criar classe que gera o arquivo HTML para exibição das informações        | :large_blue_diamond:
