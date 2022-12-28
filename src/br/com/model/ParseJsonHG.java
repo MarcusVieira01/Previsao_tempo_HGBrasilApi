@@ -6,12 +6,12 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-//Declaração de classe
+/**
+ * @apiNote Classe que realiza o corte do JSON de resposta da requisição HTTP da API HG Brasil, realiza o parse do trecho referente ao uso da chave, do trecho referente ao clima atual e a parte sobre o forecast
+ */
 public class ParseJsonHG {
     /**
      * Declaração de atributos privados. 
-     * jsonActual conterá o conteúdo sobre o clima atual proveniente corte do JSON inicial (atributo local).
-     * jsonForecast conterá o conteúdo sobre a previsão do clima proveniente corte do JSON inicial (atributo local).
      */
     private String jsonInicial;
     private String jsonActual;
