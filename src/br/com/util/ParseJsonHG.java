@@ -1,12 +1,12 @@
 //Declaração de pacote
-package br.com.model;
+package br.com.util;
 
 //Importação de classes externas
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-//Importação de classe interna
-import br.com.util.JsonCut;
+//Importação de classes internas
+import br.com.model.WeatherActual;
 
 /**
  * @apiNote Classe que realiza o corte do JSON de resposta da requisição HTTP da API HG Brasil, 

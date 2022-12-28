@@ -1,5 +1,5 @@
 //Declaração de pacote
-package br.com.model;
+package br.com.util;
 
 //Importação de classes externas
 import java.io.BufferedReader;

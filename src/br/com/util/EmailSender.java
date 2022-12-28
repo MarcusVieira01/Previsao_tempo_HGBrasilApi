@@ -1,4 +1,5 @@
-package br.com.model;
+//Declaração de pacote
+package br.com.util;
 
 //Importação de classes externas
 import org.apache.commons.mail.EmailException;

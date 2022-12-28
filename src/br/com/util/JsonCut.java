@@ -1,5 +1,9 @@
+//Declaração de pacote
 package br.com.util;
 
+/**
+ * @apiNote Classe auxiliar que fará a separação do JSON em fraçoes pertinentes como a parte do clima atual e forecast
+ */
 public class JsonCut {
     //Declaração de atributos privados
     private String jsonInicial;
