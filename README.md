@@ -46,20 +46,20 @@ Descrição das tarefas pendentes e completas:
 
 Legenda: :x: - Cancelada | :white_check_mark: Concluída | :large_blue_diamond: Pendente | :o: Reaberto
 
-Tarefa                                                                    | Status
-:---                                                                      | :---:
-Refatorar classe ParseJsonHG para retornar um objeto WeatherActual        | :white_check_mark:
-Refatorar classe KeyReader para SecretReader                              | :white_check_mark:
-Refatorar a exição do método toString() da classe WeatherActual           | :white_check_mark:
-Testar o parsionamento do JSON por secção header, result e forcast        | :x: - Cancelada
-Refatorar ParseJsonHG organizando e colocando os comentários              | :large_blue_diamond:
-Separar o método jsonCut() para classe utilitária (coesão e acoplamento)  | :large_blue_diamond:
-Criar classe WeatherForecast                                              | :large_blue_diamond:
-Refatorar ParseJsonHG para retornar um objeto WeatherForecast             | :large_blue_diamond:
-Refatorar classe SecreatReader para captura de login do e-mail            | :large_blue_diamond:
-Refatorar EmailSender para receber o login da classe SecretReader         | :large_blue_diamond:
-Criar classe que gera o arquivo HTML para exibição das informações        | :large_blue_diamond:
-Realizar o release v0.1                                                   | :large_blue_diamond:
+Tarefa                                                                    | Status               | Observação      |
+:---                                                                      | :---:                | :---            |
+Refatorar classe ParseJsonHG para retornar um objeto WeatherActual        | :white_check_mark:   |                 |
+Refatorar classe KeyReader para SecretReader                              | :white_check_mark:   |                 |  
+Refatorar a exição do método toString() da classe WeatherActual           | :white_check_mark:   |                 |
+Testar o parsionamento do JSON por secção header, result e forcast        | :x: - Cancelada      | Quebra de SOLID |
+Refatorar ParseJsonHG organizando e colocando os comentários              | :white_check_mark:   |                 |
+Separar o método jsonCut() para classe utilitária (coesão e acoplamento)  | :white_check_mark:   |                 |
+Criar classe WeatherForecast                                              | :large_blue_diamond: |                 |
+Refatorar ParseJsonHG para retornar um objeto WeatherForecast             | :large_blue_diamond: |                 |
+Refatorar classe SecreatReader para captura de login do e-mail            | :large_blue_diamond: |                 |
+Refatorar EmailSender para receber o login da classe SecretReader         | :large_blue_diamond: |                 |
+Criar classe que gera o arquivo HTML para exibição das informações        | :large_blue_diamond: |                 |
+Realizar o release v0.1                                                   | :large_blue_diamond: |                 |
 
 ## **Descrição das implementações**
 
