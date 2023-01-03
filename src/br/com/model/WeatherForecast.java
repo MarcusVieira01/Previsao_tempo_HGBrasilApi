@@ -121,13 +121,13 @@ public class WeatherForecast {
     public String toString() {
         return "Previsão do tempo "                               + "\n" + 
                 "Data: "                   + date + " " + weekday + "\n" + 
-                "Temperatura máxima: "     + tempMax              + "\n" +
-                "Temperatura mínima: "     + tempMin              + "\n" + 
-                "Nebulosidade: "           + cloudiness           + "\n" + 
-                "Precipitação Prevista: "  + rain                 + "\n" + 
-                "Probabilidade de chuva: " + rainProb             + "\n" + 
+                "Temperatura máxima: "     + tempMax + "°C"       + "\n" +
+                "Temperatura mínima: "     + tempMin + "°C"       + "\n" + 
+                "Nebulosidade: "           + cloudiness + "%"     + "\n" + 
+                "Precipitação Prevista: "  + rain + "mm"          + "\n" + 
+                "Probabilidade de chuva: " + rainProb + "%"       + "\n" + 
                 "Velocidade do vento: "    + wSpeed               + "\n" + 
                 "Descrição prevista: "     + description          + "\n" + 
-                "Tendência prevista"       + condition            + "\n";
+                "Tendência prevista: "     + condition            + "\n";
     }
 }
