@@ -60,27 +60,7 @@ public class WeatherActual {
         this.sunSet = sunSet;
         this.condSlug = condSlug;
     }
-
-    /**
-     * Sobreescrita do método toString
-     */
-    @Override
-    public String toString() {
-        return  "Clima agora"                              + "\n"      +  
-                "Última Atualização: Data: " + date        + " Hora: " + time + " " + currently + "\n" +
-                "Cidade: "                   + city        + "\n"      +
-                "Temperatura: "              + temp        + "°C\n"    + 
-                "Humidade: "                 + humidity    + "%\n"     + 
-                "Descrição: "                + description + "\n"      +
-                "Tendência: "                + condSlug    + "\n"      +
-                "Nebulosidade: "             + cloudiness  + "%\n"     +
-                "Precipitação agora: "       + rain        + "mm\n"    +
-                "Velocidade do vento: "      + wSpeed      + "\n"      +
-                "Direção do vento: "         + wDirection  + "°\n"     + 
-                "Nascer do sol: "            + sunRise     + "\n"      +
-                "Por do sol: "               + sunSet      + "\n"      ;
-    }
-
+    
     /**
      * Declaração de método getter para temperatura
      * @return string temp
@@ -179,4 +159,24 @@ public class WeatherActual {
     public String getCondSlug() {
         return this.condSlug;
     }
+    
+        /**
+         * Sobreescrita do método toString
+         */
+        @Override
+        public String toString() {
+            return  "Clima agora"                              + "\n"      +  
+                    "Última Atualização: Data: " + date        + " Hora: " + time + " " + currently + "\n" +
+                    "Cidade: "                   + city        + "\n"      +
+                    "Temperatura: "              + temp        + "°C\n"    + 
+                    "Humidade: "                 + humidity    + "%\n"     + 
+                    "Descrição: "                + description + "\n"      +
+                    "Tendência: "                + condSlug    + "\n"      +
+                    "Nebulosidade: "             + cloudiness  + "%\n"     +
+                    "Precipitação agora: "       + rain        + "mm\n"    +
+                    "Velocidade do vento: "      + wSpeed      + "\n"      +
+                    "Direção do vento: "         + wDirection  + "°\n"     + 
+                    "Nascer do sol: "            + sunRise     + "\n"      +
+                    "Por do sol: "               + sunSet      + "\n"      ;
+        }
 }
