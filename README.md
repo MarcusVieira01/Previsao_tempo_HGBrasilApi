@@ -25,9 +25,7 @@ Na raiz, há necessidade de criação do arquivo **api_key.txt** contendo a chav
 
 Também há necessidade de criação do arquivo de configuração de envio de e-mail **email_sender_congif.txt**, com host, conta e senha. Esse arquivo será lido por classe dedicada e dessa forma os dados secretos ficam disponíveis apenas na implementação.
 
-### **Uso da solução**
-
-Para que o arquivo final HTML seja criado, há necessidade de rodar a classe Main que consta dentro do pacote app. Serão realizadas as evocações das classes e métodos pertinentes à requisição, leitura, parseamento e geração do arquivo HTML final.
+Para que o arquivo final HTML seja criado, há necessidade de rodar a classe Main. Serão realizadas as evocações das classes e métodos pertinentes à requisição, leitura, parseamento e geração do arquivo HTML final, assim como o envio do e-mail.
 
 Para que o e-mail com os dados sejam enviados, há necessidade de criação do arquivo de configuração com os dados para a classe EmailSender possa usar.
 
