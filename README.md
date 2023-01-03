@@ -53,11 +53,11 @@ Testar o parsionamento do JSON por secção header, result e forcast        | :w
 Refatorar ParseJsonHG organizando e colocando os comentários              | :white_check_mark:   |                 |
 Separar o método jsonCut() para classe utilitária (coesão e acoplamento)  | :white_check_mark:   |                 |
 Criar classe WeatherForecast                                              | :white_check_mark:   |                 |
-Refatorar ParseJsonHG para retornar um objeto WeatherForecast             | :large_blue_diamond: |                 |
+Realizar o release v0.1                                                   | :large_blue_diamond: |                 |
+Criar classe que gera o arquivo HTML para exibição das informações        | :large_blue_diamond: |                 |
+Refatorar ParseJsonHG para retornar uma List de objetos WeatherForecast   | :white_check_mark:   |                 |
 Refatorar classe SecreatReader para captura de login do e-mail            | :large_blue_diamond: |                 |
 Refatorar EmailSender para receber o login da classe SecretReader         | :large_blue_diamond: |                 |
-Criar classe que gera o arquivo HTML para exibição das informações        | :large_blue_diamond: |                 |
-Realizar o release v0.1                                                   | :large_blue_diamond: |                 |
 
 ## **Descrição das implementações**
 
