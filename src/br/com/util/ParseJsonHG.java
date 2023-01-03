@@ -1,12 +1,16 @@
 //Declaração de pacote
 package br.com.util;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //Importação de classes externas
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 //Importação de classes internas
 import br.com.model.WeatherActual;
+import br.com.model.WeatherForecast;
 
 /**
  * @apiNote Classe que realiza o corte do JSON de resposta da requisição HTTP da API HG Brasil, 
@@ -18,6 +22,7 @@ public class ParseJsonHG {
      * Declaração de atributos privados. 
      */
     private String jsonInicial;
+    private List<WeatherForecast> forecastList = new ArrayList<>();
     
     /**
      * Construtor do objeto ParseJsonHG
@@ -67,23 +72,41 @@ public class ParseJsonHG {
 
     /**
      * Método que realiza o parse do trecho forecast do JSON
+     * @return
      * @throws ParseException
      */
-    public void parseForecast() throws ParseException{
+    public List<WeatherForecast> parseForecast() throws ParseException{
         //Atribuição do valor de retorno do parseamento do atributo jsonIncial para o elemento de forecast
-        String[] jsonForecast = (new JsonCut().getJsonForecast(jsonInicial));
+        String[] jsonForecast = (new JsonCut().getJsonForecast(jsonInicial));        
         
-        //TRECHO AINDA NÃO IMPLEMENTADO ---> INSTANCIAMENTO DE OBJETOS WEATHERFORECAST E INCLUSÂO EM UM LIST
-        for (String string : jsonForecast) {
+        //Iteração via foreach do array jsonForecast
+        for (String iterator : jsonForecast) {
             //Instanciamento de objeto via construtor JSONParser();
             JSONParser parser = new JSONParser();
             //Evocação de método do objeto acima instanciado, .parse(json) com cast para o tipo JSONObject
-            JSONObject jsonObject = (JSONObject) parser.parse(string);
+            JSONObject jsonObject = (JSONObject) parser.parse(iterator);
 
+            //Execução do parseamento dos elementos do JSON contido na variável iterator, via método .get(key) do objeto jsonObject
+            String date = jsonObject.get("date").toString();
             String weekday = jsonObject.get("weekday").toString();
+            String tempMax = jsonObject.get("max").toString();
+            String tempMin = jsonObject.get("min").toString();
+            String cloudiness = jsonObject.get("cloudiness").toString();
+            String rain = jsonObject.get("rain").toString();
+            String rainProb = jsonObject.get("rain_probability").toString();
+            String wSpeed = jsonObject.get("wind_speedy").toString();
+            String description = jsonObject.get("description").toString();
+            String condition = jsonObject.get("condition").toString();
 
-            System.out.println(weekday); 
+            //Declaração de variável e atribuição do objeto instanciado via construtor WeatherForecast
+            WeatherForecast forecast = new WeatherForecast(date, weekday, tempMax, tempMin, cloudiness, 
+                                                           rain, rainProb, wSpeed, description, condition);
+            //Inclusão do objeto construído na variável tipo List
+            this.forecastList.add(forecast);
         }
+
+        //Retorno do objeto tipo List
+        return forecastList;
     }
 
     /**
