@@ -1,5 +1,6 @@
 //Declaração de pacote
 package br.com.model;
+
 /**
  * @author Marcus Vieira
  * @apiNote Classe concreta contendo uma abstração de uma previsão do tempo futura, denominada forecast
