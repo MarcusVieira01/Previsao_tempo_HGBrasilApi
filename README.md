@@ -54,7 +54,7 @@ Refatorar a exição do método toString() da classe WeatherActual           | :
 Testar o parsionamento do JSON por secção header, result e forcast        | :white_check_mark:   |                 |
 Refatorar ParseJsonHG organizando e colocando os comentários              | :white_check_mark:   |                 |
 Separar o método jsonCut() para classe utilitária (coesão e acoplamento)  | :white_check_mark:   |                 |
-Criar classe WeatherForecast                                              | :large_blue_diamond: |                 |
+Criar classe WeatherForecast                                              | :white_check_mark:   |                 |
 Refatorar ParseJsonHG para retornar um objeto WeatherForecast             | :large_blue_diamond: |                 |
 Refatorar classe SecreatReader para captura de login do e-mail            | :large_blue_diamond: |                 |
 Refatorar EmailSender para receber o login da classe SecretReader         | :large_blue_diamond: |                 |
@@ -69,10 +69,12 @@ Realizar o release v0.1                                                   | :lar
 
     Classe refatorada para SecretReader, melhorando a descrição do nome e criada feature para conseguir ler o arquivo **email_sender_config.txt** e extrair os secrets necessários.
 
-- **Implementação de classe WeatherActual:** Classe que modela um clima atual, com atributos e métodos de acesso à esses atributos. Possui método toString() para exibição do conteúdo do objeto.
+- **Implementação de classe WeatherActual:** Classe concreta que modela um clima atual, com atributos e métodos de acesso à esses atributos. Possui método toString() para exibição do conteúdo do objeto.
 
 - **Implementação de classe ParseJsonHG:** Classe que realiza o parseamento do JSON do body de resposta para um objeto da classe WeatherActual.
 
 - **Implementação da classe EmailSender:** Implementação de classe que fará o envio de e-mail com os dados lidos e tratados pelo sistema implementado.
 
 - **Implementação da classe JsonCut:** Implementação de classe utilitária que fará o fracionamento do JSON de resposta da requisição HTTP para os elementos como clima atual e forecast.
+
+- **Implementação da classe WeatherForecast:** Implementação de classe concreta que modela a prefisão do tempo futuro, com atributos e métodos de acesso à esses atributos. Possui método toString() para exibição do conteúdo do objeto.
