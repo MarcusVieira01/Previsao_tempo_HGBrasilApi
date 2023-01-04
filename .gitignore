@@ -9,5 +9,3 @@ Main.class
 # Ignorar arquivos a serem implementados posteriormente
 CacheCreator.java
 CacheCreator.class
-
-*.html
