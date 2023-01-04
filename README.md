@@ -56,6 +56,7 @@ Criar classe WeatherForecast                                              | :whi
 Refatorar ParseJsonHG para retornar uma List de objetos WeatherForecast   | :white_check_mark:   |                 |
 Realizar o release v0.1                                                   | :white_check_mark:   |                 |
 Criar classe que gera o arquivo HTML para exibição das informações        | :large_blue_diamond: |                 |
+Realizar o release v0.2                                                   | :large_blue_diamond: |                 |
 Refatorar classe SecreatReader para captura de login do e-mail            | :large_blue_diamond: |                 |
 Refatorar EmailSender para receber o login da classe SecretReader         | :large_blue_diamond: |                 |
 
