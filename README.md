@@ -69,7 +69,7 @@ Refatorar EmailSender para receber o login da classe SecretReader         | :lar
 
 - **Implementação de classe WeatherActual:** Classe concreta que modela um clima atual, com atributos e métodos de acesso à esses atributos. Possui método toString() para exibição do conteúdo do objeto.
 
-- **Implementação de classe ParseJsonHG:** Classe que realiza o parseamento do JSON do body de resposta para um objeto da classe WeatherActual.
+- **Implementação de classe ParseJsonHG:** Classe que realiza o parseamento do JSON do body de resposta para um objeto da classe WeatherActual e um objeto da classe WeatherForecast.
 
 - **Implementação da classe EmailSender:** Implementação de classe que fará o envio de e-mail com os dados lidos e tratados pelo sistema implementado.
 
