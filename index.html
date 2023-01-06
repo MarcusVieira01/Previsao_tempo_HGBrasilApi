@@ -21,13 +21,13 @@
             <div class="expand navbar-expand" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Atual</a>
+                        <a class="nav-link" href="atual.html">Atual</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Para 10 dias</a>
+                        <a class="nav-link" href="forecast.html">Para 10 dias</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/MarcusVieira01">Desenvolvedor</a>
@@ -39,13 +39,14 @@
 
     <main>
         <!--Tìtulo-->
-        <section class="container w-75">
+        <section class="container w-75 mt-4">
             <p class="text-white text-sm-center align-content-sm-center fs-1 fw-bolder lh-sm">
                 Previsões do tempo atualizada a cada hora e para 10 dias
             </p>
         </section>
+
         <!--Descrição-->
-        <section class="container w-50">
+        <section class="container w-50 mt-4">
             <p class="text-sm-center text-white fs-5">
                 Projeto de exibição dos dados obtidos da HG Weather API, onde serão recuperados os dados de clima atual e do clima previsto para 10 dias. 
             </p>
@@ -57,15 +58,20 @@
                 <a href="https://github.com/MarcusVieira01/Previsao_tempo_HGBrasilApi" style="color: white">GitHub.</a>
             </p>
         </section>
+
         <!--Cards-->
-        <section class="text-white">
+        <section class="text-white mt-5">
             <div class="row justify-content-center">
                 <div class="col-sm-4">
                     <div class="card" style="border: #566f6c">
-                        <div class="card-body" style="background-color: #425b58">
-                            <h5 class="card-title">Clima atual</h5>
-                            <p class="card-text">Report sobre o clima atual, com update a cada hora.</p>
-                            <a href="#" class="btn btn-primary fw-bolder" style="background-color: white; color: black; border: white">
+                        <div class="card-body text-center" style="background-color: #425b58">
+                            <p class="card-title fs-4 fw-bold">
+                                Clima atual
+                            </p>
+                            <p class="card-text">
+                                Report sobre o clima atual, com update a cada hora.
+                            </p>
+                            <a href="atual.html" class="btn btn-primary fw-bolder" style="background-color: white; color: black; border: white">
                                 Ver clima atual
                             </a>
                         </div>
@@ -73,10 +79,14 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card" style="border: #566f6c">
-                        <div class="card-body" style="background-color: #425b58">
-                            <h5 class="card-title">Previsão do clima para 10 dias - Forecast</h5>
-                            <p class="card-text">Report sobre a previsão do tempo para 10 dias.</p>
-                            <a href="#" class="btn btn-primary fw-bolder" style="background-color: white; color: black; border: white">
+                        <div class="card-body  text-center" style="background-color: #425b58">
+                            <p class="card-title fs-4 fw-bold">
+                                Previsão do clima para 10 dias - Forecast
+                            </p>
+                            <p class="card-text">
+                                Report sobre a previsão do tempo para 10 dias.
+                            </p>
+                            <a href="forecast.html" class="btn btn-primary fw-bolder" style="background-color: white; color: black; border: white">
                                 Ver previsão longa
                             </a>
                         </div>
